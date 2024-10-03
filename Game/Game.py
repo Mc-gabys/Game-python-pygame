@@ -10,34 +10,34 @@ screen = pygame.display.set_mode((1207, 858))
 pygame.display.set_caption("Pygame")
 
 # Charger l'image
-path_image = os.path.join('/storage/emulated/0/GamePython/sans_no_background.png')
+path_image = os.path.expanduser('~/Desktop/Game/sans_no_background.png')
 image = pygame.image.load(path_image)
 image_rect = image.get_rect()
 
 # Charger le background
-fond11 = pygame.image.load(os.path.join('/storage/emulated/0/GamePython/undertale11.jpg'))
+fond11 = pygame.image.load(os.path.expanduser('~/Desktop/Game/undertale11.jpg'))
 
-fond12 = pygame.image.load(os.path.join('/storage/emulated/0/GamePython/undertale12.jpg'))
+fond12 = pygame.image.load(os.path.expanduser('~/Desktop/Game/undertale12.jpg'))
 
-fond13 = pygame.image.load(os.path.join('/storage/emulated/0/GamePython/undertale13.jpg'))
+fond13 = pygame.image.load(os.path.expanduser('~/Desktop/Game/undertale13.jpg'))
 
-fond14 = pygame.image.load(os.path.join('/storage/emulated/0/GamePython/undertale14.jpg'))
+fond14 = pygame.image.load(os.path.expanduser('~/Desktop/Game/undertale14.jpg'))
 
-fond21 = pygame.image.load(os.path.join('/storage/emulated/0/GamePython/undertale21.jpg'))
+fond21 = pygame.image.load(os.path.expanduser('~/Desktop/Game/undertale21.jpg'))
 
-fond22 = pygame.image.load(os.path.join('/storage/emulated/0/GamePython/undertale22.jpg'))
+fond22 = pygame.image.load(os.path.expanduser('~/Desktop/Game/undertale22.jpg'))
 
-fond23 = pygame.image.load(os.path.join('/storage/emulated/0/GamePython/undertale23.jpg'))
+fond23 = pygame.image.load(os.path.expanduser('~/Desktop/Game/undertale23.jpg'))
 
-fond24 = pygame.image.load(os.path.join('/storage/emulated/0/GamePython/undertale24.jpg'))
+fond24 = pygame.image.load(os.path.expanduser('~/Desktop/Game/undertale24.jpg'))
 
-fond31 = pygame.image.load(os.path.join('/storage/emulated/0/GamePython/undertale31.jpg'))
+fond31 = pygame.image.load(os.path.expanduser('~/Desktop/Game/undertale31.jpg'))
 
-fond32 = pygame.image.load(os.path.join('/storage/emulated/0/GamePython/undertale32.jpg'))
+fond32 = pygame.image.load(os.path.expanduser('~/Desktop/Game/undertale32.jpg'))
 
-fond33 = pygame.image.load(os.path.join('/storage/emulated/0/GamePython/undertale33.jpg'))
+fond33 = pygame.image.load(os.path.expanduser('~/Desktop/Game/undertale33.jpg'))
 
-fond34 = pygame.image.load(os.path.join('/storage/emulated/0/GamePython/undertale34.jpg'))
+fond34 = pygame.image.load(os.path.expanduser('~/Desktop/Game/undertale34.jpg'))
 
 # Obtenir les dimensions de l'écran
 width, height = 1207, 858
@@ -57,7 +57,7 @@ screen.blit(background, (0, 0))
 pygame.mixer.init()
     
 # Charger et jouer le fichier audio
-pygame.mixer.music.load(os.path.join('/storage/emulated/0/GamePython/Last_Breath_Sans_Phase_3_An_Enigmatic_Encounter_FDY_Remastered.mp3'))
+pygame.mixer.music.load(os.path.expanduser('~/Desktop/Game/Last_Breath_Sans_Phase_3_An_Enigmatic_Encounter_FDY_Remastered.mp3'))
 pygame.mixer.music.play()
 
 # Boucle principale
